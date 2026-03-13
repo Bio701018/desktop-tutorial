@@ -5,7 +5,7 @@ clearvars
 Sample_num = 1e4; 
 %% 模型参数
 M = 1;       % AP个数
-N = 4;       % AP天线数
+N = 16;       % AP天线数
 K = 4;       % 用户数
 
 %% 三段式大尺度衰落参数设置
@@ -169,4 +169,5 @@ Y = Y_received;          % MN × Sample_num
 S_hat = S_hat_save;      % K × Sample_num
 
 save('Dataset__M1N4K4.mat', 'H_est', 'Y', 's', 'S_hat', 'bits_stream', '-v7.3');
+
 disp('数据集 Dataset_M1N4K4.mat 已成功保存为 v7.3 格式！');
